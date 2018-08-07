@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>User Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="static/css/main.css">
+</head>
+<body class="bodybg">
+            
+    <div id="topbar">
+        <img id="logo" src="static/images/taxi.jpg">
+        <div id="sign-in-div" class="topbar-section">
+               
+        </div>
+    </div>
+        
+    <div class="clear"></div>
+            
+        <div id="menubar-container">
+            
+            <div id="menubar">
+            
+                <h1>RIDE-MY-WAY</h1>
+            
+            </div>
+    
+        </div>
+    <div class="clear"></div>
+        
+    <div id="menubar2-container">
+        
+        <div id="menubar2">
+            
+            <p>User Sign in</p>
+            <a href="index.html"> Home </a>
+            <a href="rides.html"> Rides </a>
+          
+        </div>
+
+    </div>
+   
+    <div class="clear"></div>
+    
+    <div id="page-container">
+            
+        <div id="main-description">
+            
+            <div id="signupdescription">
+
+                <div class="formwrapper">
+
+                    <h2>New User</h2>
+                    <h3 id="not_created"></h3>
+                    <form id=id="signUpPassenger">
+
+                        <div class="form-element">
+
+                            <label class="label" for="username">username</label>
+                            <input class="inputt" type="text" name="username" id="username" required>
+                            <!-- <input type="text" id="username" required> -->
+
+                        </div>
+                        <div class="form-element">
+
+                            <label class="label" for="email">Email</label>
+                            <input class="inputt" type="email" placeholder = "eg. youremail@gmail.com" id="emaili" required>
+
+                        </div>
+
+
+                        <div class="form-element">
+
+                            <label class="label" for="password">Password</label>
+                            <input class="inputt" type="password" name="password" id="password" required>
+
+                        </div>
+
+                        <div class="form-element">
+
+                            <label class="label"  for="passwordConfirm">Confirm Password</label>
+                            <input class="inputt" type="password" name="passwordConfirm" id="confirmPassword" required>
+
+                        </div>
+                        
+                        <div class="form-element">
+
+                            <button class="inputt" type="button" id="register">Register</button>
+
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    
+        <div id="available">
+            
+                <h3 id="flash">Already a User?</h3>
+                        
+                <div>
+                    <div class="feature">
+                    <div class="wrapper">
+                        <div class="tripfeature">
+                                <div class="loginwrapper"> 
+                                    <form action="userrides.html">
+                                        <div class="form-element">
+    
+                                            <label class="label" for="email">Email</label>
+                                            <input class="inputt" type="email" name="email" id="loginemail" placeholder = "eg. youremail@gmail.com" required>
+    
+                                        </div>
+                                        
+                                        
+                                        <div class="form-element">
+    
+                                        <label class="label" for="password">Password</label>
+                                        <input class="inputt" type="password" id="loginpassword"  required>
+    
+                                        </div>
+                                                
+                                        <div class="form-element">
+    
+                                                <button class="inputt" type="button" id="login">Login</button>
+                                                <h5 id="loginfail"></h5>
+                                        </div>
+                                    </form>
+    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <script src="static/js/signup.js"></script>
+
+</body> 
+</html>

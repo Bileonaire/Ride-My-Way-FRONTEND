@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>USER-LOGIN</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="static/css/main.css">
+</head>
+<body class="bodybg">
+            
+    <div id="topbar">
+        <img id="logo" src="static/images/taxi.jpg">
+            
+        <div id="sign-in-div" class="topbar-section">
+            <img id="signin-image" src="static/images/signin.jpg">
+                    
+            <a><span type="button" id="signintext">Sign in</span></a>
+        </div>
+            
+    </div>
+    
+    <div class="clear"></div>
+            
+        <div id="menubar-container">
+            
+        <div id="menubar">
+            
+            <h1>RIDE-MY-WAY</h1>
+            
+        </div>
+    
+    </div>
+        
+    <div class="clear"></div>
+        
+    <div id="menubar2-container">
+        
+            <div id="menubar2">
+                
+                <p id="loged_user_name"></p>
+                <a href="index.html"> Home </a>
+                <a href="myrides.html"> My Rides </a>
+				<a href="myrequests.html"> My requests </a>
+
+            </div>
+
+    </div>
+   
+    <div class="clear"></div>
+    <div>
+			<a class="button" type="button" id="createride">Add New ride</a>
+		</div>
+    
+        <div id="page-container">
+
+    </div>
+    <div id="id01" class="modal1" style="background-image:url('static/images/create.jpg'); background-size: cover; background-position: center;">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close1" title="Close Modal">&times;</span>
+        <div id="info_create_ride" class="req_header_info">Fill in Ride Information</div>
+        <form class="modal-content1">
+            <div id="unsuccessful" ></div>
+            <input type="text" class="input" name="pickup" id="departurepoint" placeholder="Enter departure point">
+            <input type="text" class="input" name="destination" id="destination" placeholder="Enter your destination">
+            <input type="text" class="input" name="departuretime" id="departuretime" placeholder="Enter departure time">
+            <input type="text" class="input" name="numberplate" id="numberplate" placeholder="Enter number plate">
+            <input type="number" min="1" class="input" name="maximum" id="maximum" placeholder="Enter maximum passengers">
+            
+            <div type="button" id="newride" class="model_join" style="width:100%;">Create Ride</div>
+        </form>
+      </div>
+   </body>
+
+    <script src="static/js/rides.js"></script>
+
+</body>
+
+</html>
